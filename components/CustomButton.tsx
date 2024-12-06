@@ -25,7 +25,9 @@ const getTextVariantStyle = (variant: ButtonProps['textVariant']) => {
         case 'danger':
             return "text-red-100"; 
         case 'success':
-            return "text-green-100";   
+            return "text-green-100"; 
+        case 'white':
+            return "text-white";  
         default:
             return "text-secondary-900" 
     }
@@ -47,7 +49,7 @@ const CustomButton = ({
       {...props}
     >
         {IconLeft && <IconLeft />}
-        <Text className={`text-white text-lg font-bold ${getTextVariantStyle(textVariant)}`}>{title}</Text>
+        <Text className={`text-lg font-bold ${getTextVariantStyle(textVariant)}`}>{title}</Text>
         {IconRight && <IconRight />}
     </TouchableOpacity>
 )

@@ -30,14 +30,14 @@ import noResult from "@/assets/images/no-result.png";
 import onboarding1 from "@/assets/images/icon.png";
 import onboarding2 from "@/assets/images/icon.png";
 import onboarding3 from "@/assets/images/icon.png";
-import signUpCar from "@/assets/images/signup-car.png";
+import signUpPan from "@/assets/images/signUpPan.png";
 
 export const images = {
     onboarding1,
     onboarding2,
     onboarding3,
     getStarted,
-    signUpCar,
+    signUpPan,
     check,
     noResult,
     message,
@@ -74,20 +74,27 @@ export const icons = {
 export const onboarding = [
     {
         id: 1,
+        title: "Welcome to Servery!",
+        description:
+            "Let's get you started.",
+        image: images.onboarding1,
+    },
+    {
+        id: 2,
         title: "The perfect recipe is just a tap away!",
         description:
             "Your journey begins with Servery. Find your ideal recipe effortlessly.",
         image: images.onboarding1,
     },
     {
-        id: 2,
+        id: 3,
         title: "Best food in your hands with Servery",
         description:
             "Discover the convenience of finding your favorite recipes with Servery",
         image: images.onboarding2,
     },
     {
-        id: 3,
+        id: 4,
         title: "Your kitchen, your way. Let's cook!",
         description:
             "Search for recipes, make cookbooks, and connect with foodies all over the world.",
