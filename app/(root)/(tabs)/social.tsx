@@ -20,7 +20,7 @@ const Post = ({ post }: any) => {
       <View className='flex-row items-center justify-between p-4'>
         <View className='flex-row items-center gap-x-2'>
           <Image 
-            source={{ uri: post.user.avatar }}
+            source={ post.user.avatar }
             className='w-10 h-10 rounded-full'
           />
           <View>
@@ -41,7 +41,7 @@ const Post = ({ post }: any) => {
       {/* Post Image */}
       {post.image && (
         <Image
-          source={{ uri: post.image }}
+          source={ post.image }
           className='w-full h-[300px]'
           resizeMode='cover'
         />

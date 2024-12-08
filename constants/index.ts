@@ -113,6 +113,30 @@ export const categories = [
     }
   ];
 
+export const COOKBOOKS = [
+    {
+      id: '1',
+      name: 'Weekend Favorites',
+      recipeCount: 12,
+      coverImage: images.recipeOfTheDay,
+      description: 'Perfect recipes for lazy weekends'
+    },
+    {
+      id: '2',
+      name: 'Quick & Easy',
+      recipeCount: 8,
+      coverImage: images.desserts,
+      description: '30 minutes or less'
+    },
+    {
+      id: '3',
+      name: 'Italian Cuisine',
+      recipeCount: 15,
+      coverImage: images.dinner,
+      description: 'Classic Italian recipes'
+    },
+   ];
+
 export const POSTS = [
     {
       id: '1',
@@ -121,7 +145,7 @@ export const POSTS = [
         avatar: `${images.onboarding1}`,
         username: 'johndoe'
       },
-      content: 'Just made this amazing pasta dish! 🍝',
+      content: 'Just made this amazing lamb dish! 🍖',
       image: `${images.recipeOfTheDay}`,
       likes: 125,
       comments: 14,
