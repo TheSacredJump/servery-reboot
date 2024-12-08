@@ -113,6 +113,47 @@ export const categories = [
     }
   ];
 
+export const POSTS = [
+    {
+      id: '1',
+      user: {
+        name: 'John Doe',
+        avatar: `${images.onboarding1}`,
+        username: 'johndoe'
+      },
+      content: 'Just made this amazing pasta dish! 🍝',
+      image: `${images.recipeOfTheDay}`,
+      likes: 125,
+      comments: 14,
+      timeAgo: '2h',
+      isLiked: false
+    },
+    // Add more posts...
+  ]; 
+
+  export const socialFilters = [
+    {
+        id: '1',
+        name: 'Trending',
+        emoji: '🔥'
+    },
+    {
+        id: '2',
+        name: 'New',
+        emoji: '🌟'
+    },
+    {
+        id: '3',
+        name: 'Most Liked',
+        emoji: '👍'
+    },
+    {
+        id: '4',
+        name: 'Friends',
+        emoji: '💞'
+    },
+  ]; 
+
 export const onboarding = [
     {
         id: 1,
