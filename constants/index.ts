@@ -31,8 +31,11 @@ import onboarding1 from "@/assets/images/icon.png";
 import onboarding2 from "@/assets/images/icon.png";
 import onboarding3 from "@/assets/images/icon.png";
 import signUpPan from "@/assets/images/signUpPan.png";
+import recipeOfTheDay from "@/assets/images/stir-fry lamb.png";
+import dice from "@/assets/images/dice.png";
 
 export const images = {
+    recipeOfTheDay,
     onboarding1,
     onboarding2,
     onboarding3,
@@ -41,6 +44,7 @@ export const images = {
     check,
     noResult,
     message,
+    dice,
 };
 
 export const icons = {
@@ -70,6 +74,34 @@ export const icons = {
     target,
     to,
 };
+
+export const categories = [
+    {
+      id: '1',
+      name: 'Breakfast',
+      image: images.signUpPan // Replace with actual category images
+    },
+    {
+      id: '2',
+      name: 'Lunch',
+      image: images.signUpPan
+    },
+    {
+      id: '3',
+      name: 'Dinner',
+      image: images.signUpPan
+    },
+    {
+      id: '4',
+      name: 'Desserts',
+      image: images.signUpPan
+    },
+    {
+      id: '5',
+      name: 'Snacks',
+      image: images.signUpPan
+    }
+  ];
 
 export const onboarding = [
     {

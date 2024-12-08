@@ -13,6 +13,7 @@ const SignUp = () => {
 
     const [form , setForm] = useState({
         name: "",
+        username: "",
         email: "",
         password: "",
     })
@@ -30,6 +31,9 @@ const SignUp = () => {
     
         try {
           await signUp.create({
+            firstName: form.name.substring(0, form.name.indexOf(" ")),
+            lastName: form.name.substring(form.name.indexOf(" ") + 1),
+            username: form.username,
             emailAddress: form.email,
             password: form.password,
           })
@@ -92,12 +96,19 @@ const SignUp = () => {
             </View>
 
             <View className='p-5'>
-                <InputField 
+              <InputField 
                   label="Name" 
-                  placeholder="Enter your name" 
+                  placeholder="Enter your full name" 
                   icon={icons.person} 
                   value={form.name} 
                   onChangeText={(value) => setForm({...form, name: value})}
+                />
+                <InputField 
+                  label="Username" 
+                  placeholder="Create your username" 
+                  icon={icons.person} 
+                  value={form.username} 
+                  onChangeText={(value) => setForm({...form, username: value})}
                 />
                 <InputField 
                   label="Email" 
