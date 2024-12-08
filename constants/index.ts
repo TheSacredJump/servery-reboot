@@ -33,6 +33,11 @@ import onboarding3 from "@/assets/images/icon.png";
 import signUpPan from "@/assets/images/signUpPan.png";
 import recipeOfTheDay from "@/assets/images/stir-fry lamb.png";
 import dice from "@/assets/images/dice.png";
+import breakfast from "@/assets/images/breakfast.png";
+import lunch from "@/assets/images/lunch.png";
+import dinner from "@/assets/images/dinner.png";
+import desserts from "@/assets/images/dessert.png";
+import snacks from "@/assets/images/snacks.png";
 
 export const images = {
     recipeOfTheDay,
@@ -45,6 +50,11 @@ export const images = {
     noResult,
     message,
     dice,
+    breakfast,
+    lunch,
+    dinner,
+    desserts,
+    snacks,
 };
 
 export const icons = {
@@ -79,27 +89,27 @@ export const categories = [
     {
       id: '1',
       name: 'Breakfast',
-      image: images.signUpPan // Replace with actual category images
+      image: images.breakfast // Replace with actual category images
     },
     {
       id: '2',
       name: 'Lunch',
-      image: images.signUpPan
+      image: images.lunch
     },
     {
       id: '3',
       name: 'Dinner',
-      image: images.signUpPan
+      image: images.dinner
     },
     {
       id: '4',
       name: 'Desserts',
-      image: images.signUpPan
+      image: images.desserts
     },
     {
       id: '5',
       name: 'Snacks',
-      image: images.signUpPan
+      image: images.snacks
     }
   ];
 

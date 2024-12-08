@@ -4,7 +4,7 @@ import { FlatList, Image, Text, TouchableOpacity, View } from "react-native";
 
 export default function List() {
     const renderCategory = ({ item }: any) => (
-        <TouchableOpacity className='mr-10'>
+        <TouchableOpacity className='mr-7'>
             <View className='relative w-24 h-24'>
                 <Image 
                     source={item.image}
@@ -12,7 +12,7 @@ export default function List() {
                     resizeMode='cover'
                 />
             </View>
-            <Text className='text-center text-white font-medium mt-2'>{item.name}</Text>
+            <Text className='text-center text-gray-200 font-medium mt-2'>{item.name}</Text>
         </TouchableOpacity>
     );
 
