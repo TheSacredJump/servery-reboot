@@ -38,6 +38,7 @@ import lunch from "@/assets/images/lunch.png";
 import dinner from "@/assets/images/dinner.png";
 import desserts from "@/assets/images/dessert.png";
 import snacks from "@/assets/images/snacks.png";
+import ramen from "@/assets/images/ramen.png";
 
 export const images = {
     recipeOfTheDay,
@@ -55,6 +56,7 @@ export const images = {
     dinner,
     desserts,
     snacks,
+    ramen
 };
 
 export const icons = {

@@ -2,10 +2,9 @@ import { useUser } from '@clerk/clerk-expo'
 import { Text, View, Image, TouchableOpacity, ScrollView } from 'react-native'
 import { SafeAreaView } from 'react-native-safe-area-context'
 import AntDesign from '@expo/vector-icons/AntDesign';
-import Fontisto from '@expo/vector-icons/Fontisto';
 import Ionicons from '@expo/vector-icons/Ionicons';
 import { LinearGradient } from 'expo-linear-gradient';
-import { categories, images } from '@/constants';
+import { images } from '@/constants';
 import List from '@/components/List';
 
 export default function Page() {
@@ -22,7 +21,7 @@ export default function Page() {
           </View>
           <View className='flex flex-row items-center gap-x-5'>
             <TouchableOpacity>
-              <Fontisto name="search" size={22} color="#F4F4F4" />
+              <Ionicons name="search-outline" size={24} color="#CCCCCC" />
             </TouchableOpacity>
             <LinearGradient
               colors={['#5fb3f7', '#2c67f2']}
@@ -40,7 +39,7 @@ export default function Page() {
         </View>
 
         {/* Recipe of the Day */}
-        <View className='mt-10 relative w-full h-[400px]'>
+        <TouchableOpacity className='mt-10 relative w-full h-[400px]'>
           <Image 
             source={images.recipeOfTheDay} 
             resizeMode='cover' 
@@ -69,7 +68,7 @@ export default function Page() {
             </View>
             <Text className='text-white text-3xl font-bold mt-3'>Sauteed Lamb With Pickled Onions</Text>
           </View>
-        </View>
+        </TouchableOpacity>
 
         {/* Random Recipe */}
         <View style={{borderRadius: 35}} className='mt-4 w-full py-2 px-4 bg-neutral-800 flex flex-row items-center justify-between'>
@@ -94,6 +93,10 @@ export default function Page() {
         {/* Categories */}
         <View className='mt-8'>
           <List />
+        </View>
+        <View>
+          <Text className='text-white text-2xl font-bold mt-10'>Recommended For You</Text>
+          {/* Recommended Recipes List */}
         </View>
       </ScrollView>
     </SafeAreaView>
